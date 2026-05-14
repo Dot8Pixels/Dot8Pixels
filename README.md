@@ -165,13 +165,13 @@ $$\text{Sharpe Ratio} = \frac{\mu_p - r_f}{\sigma_p}$$
 > Auto-updated daily by GitHub Actions — always showing the 5 most recently pushed repos.
 
 <!-- REPOS:START -->
-| Repository                                                                   | Description                        | Language | Updated  |
-| ---------------------------------------------------------------------------- | ---------------------------------- | -------- | -------- |
-| [poc-llm-wiki](https://github.com/Dot8Pixels/poc-llm-wiki)                   | POC for Karpathy's LLM Wiki        | —        | May 2026 |
-| [Dot8Pixels](https://github.com/Dot8Pixels/Dot8Pixels)                       | Github Profile                     | —        | May 2026 |
-| [sidecar](https://github.com/Dot8Pixels/sidecar)                             | poc for sidecar container          | Python   | Apr 2026 |
-| [poc-anomaly-detection](https://github.com/Dot8Pixels/poc-anomaly-detection) | Statistical & ML anomaly detection | HTML     | Apr 2026 |
-| [remote-debugging](https://github.com/Dot8Pixels/remote-debugging)           | Remote Debugging                   | Python   | Dec 2025 |
+| Repository | Description | Language | Updated |
+|---|---|---|---|
+| [poc-llm-wiki](https://github.com/Dot8Pixels/poc-llm-wiki) | POC for Karpathy's LLM Wiki | — | May 2026 |
+| [sidecar](https://github.com/Dot8Pixels/sidecar) | poc for sidecar container | Python | Apr 2026 |
+| [poc-anomaly-detection](https://github.com/Dot8Pixels/poc-anomaly-detection) | — | HTML | Apr 2026 |
+| [remote-debugging](https://github.com/Dot8Pixels/remote-debugging) | Remote Debugging | Python | Dec 2025 |
+| [rust_mastery_saga](https://github.com/Dot8Pixels/rust_mastery_saga) | Reference course URL: https://www.udemy.com/course/rust-mastery-saga-backend-rust/ | Rust | May 2025 |
 <!-- REPOS:END -->
 
 <div align="right"><a href="https://github.com/Dot8Pixels?tab=repositories">View all 49+ repositories →</a></div>
