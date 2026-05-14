@@ -1,45 +1,54 @@
-<!--
-**Dot8Pixels/Dot8Pixels** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=32&duration=3500&pause=1500&color=5E6AD2&center=true&vCenter=true&width=520&lines=Napat+Sri-ampun" alt="Napat Sri-ampun" />
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Python &middot; Rust &middot; Financial Systems**
 
-<h1 align="center">Hi 👋, I'm Napat Sri-ampun</h1>
-<h3 align="center">A passionate in Python and Rust programming</h3>
+<br/>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=dot8pixels&label=Profile%20views&color=0e75b6&style=flat" alt="dot8pixels" /> </p>
+[![Profile Views](https://komarev.com/ghpvc/?username=dot8pixels&style=flat-square&color=5e6ad2&label=views)](https://github.com/dot8pixels) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0f1011?style=flat-square&logo=linkedin&logoColor=5e6ad2)](https://linkedin.com/in/napat-sri-ampun) [![Email](https://img.shields.io/badge/Email-0f1011?style=flat-square&logo=gmail&logoColor=5e6ad2)](mailto:napatsriz@gmail.com) [![Resume](https://img.shields.io/badge/Resume-0f1011?style=flat-square&logo=googledrive&logoColor=5e6ad2)](https://drive.google.com/file/d/1Bm0qC20AxjAYl0SgcZEq1VJxNTEhi0GL/view?usp=sharing)
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=dot8pixels" alt="dot8pixels" /></a> </p>
+</div>
 
-- 🔭 I'm working in the financial domain with **Python**
+---
 
-- 🌱 I’m currently learning in **Python & Rust**
+Python and Rust engineer in the financial domain. Building data pipelines, analytical systems, and performance-critical tooling &mdash; Python for domain logic and analytics, Rust when correctness and speed both matter.
 
-- 📫 How to reach me **napatsriz@gmail.com**
+---
 
-- 📄 Know about my experiences [🔎](https://drive.google.com/file/d/1Bm0qC20AxjAYl0SgcZEq1VJxNTEhi0GL/view?usp=sharing)
+### Stack
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/napat-sri-ampun" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="napat-sri-ampun" height="30" width="40" /></a>
-</p>
+<div align="center">
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> </p>
+[![](https://skillicons.dev/icons?i=python,rust,docker,linux,git,sqlite,selenium,postman&theme=dark&perline=8)](https://skillicons.dev)
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=dot8pixels&show_icons=true&locale=en&layout=compact" alt="dot8pixels" /></p>
+<br/>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=dot8pixels&show_icons=true&locale=en" alt="dot8pixels" /></p>
+![pandas](https://img.shields.io/badge/pandas-0f1011?style=flat-square&logo=pandas&logoColor=5e6ad2) ![scikit-learn](https://img.shields.io/badge/scikit--learn-0f1011?style=flat-square&logo=scikitlearn&logoColor=5e6ad2) ![seaborn](https://img.shields.io/badge/seaborn-0f1011?style=flat-square&logo=python&logoColor=5e6ad2)
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=dot8pixels&" alt="dot8pixels" /></p>
+</div>
 
-<img align="center" src="https://github.com/Dot8Pixels/snake-eating-github-contributions/blob/output/github-snake-dark.svg" alt="dot8pixels" />
+---
+
+### GitHub
+
+<div align="center">
+
+<table><tr>
+<td><img src="https://github-readme-stats.vercel.app/api?username=dot8pixels&show_icons=true&bg_color=0f1011&title_color=5e6ad2&text_color=d0d6e0&icon_color=5e6ad2&border_color=23252a&count_private=true" /></td>
+<td><img src="https://github-readme-stats.vercel.app/api/top-langs?username=dot8pixels&layout=compact&bg_color=0f1011&title_color=5e6ad2&text_color=d0d6e0&border_color=23252a" /></td>
+</tr></table>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com/?user=dot8pixels&background=0f1011&ring=5e6ad2&fire=5e6ad2&currStreakLabel=5e6ad2&sideLabels=8a8f98&sideNums=d0d6e0&dates=8a8f98&border=23252a" />
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Dot8Pixels/snake-eating-github-contributions/output/github-snake-dark.svg" alt="contribution snake" />
+
+</div>
