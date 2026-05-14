@@ -202,7 +202,8 @@ img, svg { display: block; max-width: 100%; }
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease,
+              color 0.15s ease, transform 0.1s ease;
   user-select: none;
 }
 
@@ -210,6 +211,8 @@ img, svg { display: block; max-width: 100%; }
   outline: 2px solid var(--color-primary-focus);
   outline-offset: 2px;
 }
+
+.btn:active { transform: scale(0.97); }
 
 .btn-primary {
   background-color: var(--color-primary);
@@ -343,12 +346,15 @@ img, svg { display: block; max-width: 100%; }
   border: 1px solid var(--color-hairline);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+              transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s ease;
 }
 
 .card:hover {
   background-color: var(--color-surface-2);
   border-color: var(--color-hairline-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 
 
@@ -543,12 +549,15 @@ img, svg { display: block; max-width: 100%; }
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   text-decoration: none;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+              transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s ease;
 }
 
 .project-card:hover {
   background-color: var(--color-surface-2);
   border-color: var(--color-hairline-strong);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
 }
 
 .project-card:focus-visible {
@@ -712,6 +721,240 @@ img, svg { display: block; max-width: 100%; }
 }
 
 
+/* ── 13b. Project meta (date + chips row) ─────────────────── */
+
+.project-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--space-sm);
+  gap: var(--space-sm);
+}
+
+.repo-date {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--color-ink-tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+
+/* ── 16. About section ────────────────────────────────────── */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xxl);
+  align-items: start;
+}
+
+.about-text .section-heading {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.about-p2 {
+  margin-top: var(--space-md);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  text-align: center;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--color-ink-tertiary);
+}
+
+
+/* ── 17. Work section header + live badge ─────────────────── */
+
+.work-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.work-header .section-heading {
+  margin-bottom: 0;
+}
+
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+  background-color: var(--color-surface-1);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  margin-bottom: var(--space-xxl);
+}
+
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+
+/* ── 18. Skeleton loading state ───────────────────────────── */
+
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+
+.skeleton {
+  pointer-events: none;
+}
+
+.skel-line {
+  height: 12px;
+  border-radius: var(--radius-xs);
+  background: linear-gradient(
+    90deg,
+    var(--color-surface-2) 25%,
+    var(--color-surface-3) 50%,
+    var(--color-surface-2) 75%
+  );
+  background-size: 600px 100%;
+  animation: shimmer 1.4s infinite linear;
+  margin-bottom: var(--space-sm);
+}
+
+.skel-short { width: 30%; }
+.skel-long  { width: 80%; height: 18px; }
+.skel-mid   { width: 60%; }
+
+.skeleton-ghost {
+  opacity: 0;
+}
+
+
+/* ── 19. Hero entrance ────────────────────────────────────── */
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero .eyebrow    { animation: fade-up 0.55s cubic-bezier(.16,1,.3,1) 0.05s both; }
+.hero .display-xl { animation: fade-up 0.65s cubic-bezier(.16,1,.3,1) 0.18s both; }
+.hero-sub         { animation: fade-up 0.65s cubic-bezier(.16,1,.3,1) 0.32s both; }
+.hero-actions     { animation: fade-up 0.55s cubic-bezier(.16,1,.3,1) 0.46s both; }
+.hero-meta        { animation: fade-up 0.55s cubic-bezier(.16,1,.3,1) 0.56s both; }
+
+
+/* ── 20. Scroll reveal ────────────────────────────────────── */
+/*
+   Uses the independent `translate` CSS property (Transforms L2)
+   so it composes with `transform` on .card hover without conflict.
+*/
+
+[data-reveal] {
+  opacity: 0;
+  translate: 0 22px;
+  transition: opacity 0.6s cubic-bezier(.16,1,.3,1),
+              translate 0.6s cubic-bezier(.16,1,.3,1);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* Restore card hover transitions once reveal animation finishes */
+.card[data-reveal].is-visible {
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+              transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s ease;
+}
+
+[data-reveal-delay="1"] { transition-delay: 0.07s; }
+[data-reveal-delay="2"] { transition-delay: 0.14s; }
+[data-reveal-delay="3"] { transition-delay: 0.21s; }
+[data-reveal-delay="4"] { transition-delay: 0.28s; }
+[data-reveal-delay="5"] { transition-delay: 0.35s; }
+[data-reveal-delay="6"] { transition-delay: 0.42s; }
+
+
+/* ── 21. Nav states ───────────────────────────────────────── */
+
+.nav-links a.is-active {
+  color: var(--color-ink);
+}
+
+.top-nav.is-scrolled {
+  background-color: color-mix(in srgb, var(--color-canvas) 80%, transparent);
+  border-bottom-color: var(--color-hairline-strong);
+}
+
+
+/* ── 22. Focus card icon accent on hover ──────────────────── */
+
+.focus-card:hover .focus-icon {
+  border-color: color-mix(in srgb, var(--color-primary) 40%, var(--color-hairline));
+  background-color: color-mix(in srgb, var(--color-primary) 8%, var(--color-surface-2));
+  color: var(--color-primary);
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+
+/* ── 23. Reduced motion ───────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .eyebrow, .hero .display-xl, .hero-sub,
+  .hero-actions, .hero-meta { animation: none; }
+
+  [data-reveal],
+  [data-reveal].is-visible,
+  .card[data-reveal].is-visible {
+    opacity: 1;
+    translate: 0 0;
+    transition: none;
+  }
+}
+
+
 /* ── 15. Responsive ───────────────────────────────────────── */
 
 @media (max-width: 768px) {
@@ -741,6 +984,25 @@ img, svg { display: block; max-width: 100%; }
   /* Focus */
   .focus-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Work header */
+  .work-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .live-badge {
+    margin-bottom: var(--space-xl);
   }
 
   /* Stack */

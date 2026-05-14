@@ -11,7 +11,7 @@ All frontend work must adhere to the **Linear design system** defined in [`DESIG
 | -------- | ---------------------------- |
 | Name     | Napat Sri-ampun              |
 | Handle   | Dot8Pixels                   |
-| Role     | Python + Rust Engineer       |
+| Role     | Python Developer             |
 | Focus    | Financial Systems · Data Analytics · LLM Applications |
 | Email    | napatsriz@gmail.com          |
 | LinkedIn | linkedin.com/in/napat-sri-ampun |

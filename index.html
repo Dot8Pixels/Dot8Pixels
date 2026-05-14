@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Napat Sri-ampun — Python + Rust Engineer</title>
-  <meta name="description" content="Python and Rust engineer specializing in financial systems, data analytics, and LLM-backed applications." />
+  <title>Napat Sri-ampun — Python Developer</title>
+  <meta name="description" content="Python developer in Thailand specializing in financial systems, data analytics, anomaly detection, and LLM applications. Building investment tooling, data pipelines, and production containers." />
   <meta name="author" content="Napat Sri-ampun" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Napat Sri-ampun — Python Developer" />
+  <meta property="og:description" content="Python developer building financial systems, data pipelines, and LLM tooling." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -20,6 +24,7 @@
         <span class="brand-dot" aria-hidden="true">●</span>Dot8Pixels
       </a>
       <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
         <li><a href="#focus">Focus</a></li>
         <li><a href="#stack">Stack</a></li>
         <li><a href="#work">Work</a></li>
@@ -39,14 +44,16 @@
     <!-- ─── Hero ───────────────────────────────────────────── -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <span class="eyebrow">Python · Rust · Financial Systems</span>
+        <span class="eyebrow">Python · Rust · Financial Systems · LLM</span>
         <h1 class="display-xl" id="hero-heading">
           Napat<br />Sri-ampun
         </h1>
         <p class="hero-sub">
-          Building investment analysis tools, data pipelines, and anomaly detection
-          systems. Python for domain logic and rapid iteration —
-          <span class="mono-inline">Rust</span> for correctness and speed.
+          I build systems where correctness and speed both matter —
+          financial data pipelines, investment analytics, anomaly detection,
+          and LLM applications.
+          <span class="mono-inline">Python</span> for domain logic and iteration.
+          <span class="mono-inline">Rust</span> when the machine has to get it right.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get in touch</a>
@@ -69,6 +76,10 @@
             <dd class="meta-value">Finance · Data · LLM</dd>
           </div>
           <div class="hero-meta-item">
+            <dt class="meta-label">Repositories</dt>
+            <dd class="meta-value">49+ public</dd>
+          </div>
+          <div class="hero-meta-item">
             <dt class="meta-label">Available</dt>
             <dd class="meta-value meta-available">Open to work</dd>
           </div>
@@ -76,42 +87,122 @@
       </div>
     </section>
 
+    <!-- ─── About ──────────────────────────────────────────── -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <span class="eyebrow">About</span>
+            <h2 class="display-md section-heading" id="about-heading">
+              Engineered for<br />the hard problems.
+            </h2>
+            <p class="body-lg ink-muted">
+              I'm a Python developer based in Thailand, focused on the intersection
+              of financial systems, data engineering, and applied machine learning. I build
+              tools that analysts and engineers actually rely on — investment analyzers,
+              production data pipelines, and anomaly detection systems.
+            </p>
+            <p class="body-sm ink-muted about-p2">
+              Alongside applied work, I've been systematically deepening Rust proficiency
+              — from building a text editor and screen recorder from scratch to completing
+              Rustlings and Advent of Code. I believe correctness-first languages change
+              how you reason about every codebase, not just the ones written in them.
+            </p>
+          </div>
+          <div class="about-stats" data-reveal data-reveal-delay="2">
+            <div class="stat-card card">
+              <span class="stat-number" data-count="49" data-count-suffix="+">49+</span>
+              <span class="stat-label">Public repos</span>
+            </div>
+            <div class="stat-card card">
+              <span class="stat-number">Python<br />&amp; Rust</span>
+              <span class="stat-label">Primary languages</span>
+            </div>
+            <div class="stat-card card">
+              <span class="stat-number">Finance<br />+ LLM</span>
+              <span class="stat-label">Current domain focus</span>
+            </div>
+            <div class="stat-card card">
+              <span class="stat-number">Data<br />pipelines</span>
+              <span class="stat-label">Core expertise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ─── Focus ──────────────────────────────────────────── -->
     <section class="section" id="focus" aria-labelledby="focus-heading">
       <div class="container">
-        <span class="eyebrow">Focus</span>
-        <h2 class="display-md section-heading" id="focus-heading">
-          What I work on.
+        <span class="eyebrow" data-reveal>Focus</span>
+        <h2 class="display-md section-heading" id="focus-heading" data-reveal data-reveal-delay="1">
+          What I build.
         </h2>
         <div class="focus-grid">
-          <article class="card focus-card">
+          <article class="card focus-card" data-reveal data-reveal-delay="1">
             <div class="focus-icon" aria-hidden="true">
-              <span class="mono-symbol">⟨/⟩</span>
+              <span class="mono-symbol">⟨$⟩</span>
             </div>
             <h3 class="card-title">Financial Systems</h3>
             <p class="body-sm ink-muted">
-              Investment analyzers, pricing engines, and financial data pipelines. Domain logic
-              in Python with performance-critical paths moved to Rust.
+              Investment analyzers, portfolio evaluators, and financial data pipelines
+              built with Python and Streamlit. Domain logic stays readable;
+              performance-critical paths move to Rust.
             </p>
           </article>
-          <article class="card focus-card">
+          <article class="card focus-card" data-reveal data-reveal-delay="2">
             <div class="focus-icon" aria-hidden="true">
               <span class="mono-symbol">∿</span>
             </div>
             <h3 class="card-title">Anomaly Detection</h3>
             <p class="body-sm ink-muted">
-              ML-backed anomaly detection using pandas, scikit-learn, and statistical models
-              deployed in containerized production environments.
+              ML-backed statistical anomaly detection for financial data streams.
+              Proof-of-concept to production using pandas, scikit-learn,
+              and containerized deployment patterns.
             </p>
           </article>
-          <article class="card focus-card">
+          <article class="card focus-card" data-reveal data-reveal-delay="3">
             <div class="focus-icon" aria-hidden="true">
               <span class="mono-symbol">◈</span>
             </div>
             <h3 class="card-title">LLM Applications</h3>
             <p class="body-sm ink-muted">
-              LLM-backed knowledge retrieval and production container patterns.
-              Exploring agentic workflows and RAG architectures.
+              Building RAG-based knowledge systems and agentic workflows —
+              starting from Karpathy's LLM foundations and extending into
+              production-ready container patterns.
+            </p>
+          </article>
+          <article class="card focus-card" data-reveal data-reveal-delay="4">
+            <div class="focus-icon" aria-hidden="true">
+              <span class="mono-symbol">⬡</span>
+            </div>
+            <h3 class="card-title">Systems &amp; Tooling</h3>
+            <p class="body-sm ink-muted">
+              Remote debugging across container boundaries, sidecar architecture,
+              devcontainer setups, and Python packaging via Rust.
+              Preference for tools that compose.
+            </p>
+          </article>
+          <article class="card focus-card" data-reveal data-reveal-delay="5">
+            <div class="focus-icon" aria-hidden="true">
+              <span class="mono-symbol">⚙</span>
+            </div>
+            <h3 class="card-title">Rust Engineering</h3>
+            <p class="body-sm ink-muted">
+              Systematic Rust mastery — screen recorder, text editor, Rustlings,
+              Advent of Code, and a full backend course. Applying ownership semantics
+              to solve problems Python cannot.
+            </p>
+          </article>
+          <article class="card focus-card" data-reveal data-reveal-delay="6">
+            <div class="focus-icon" aria-hidden="true">
+              <span class="mono-symbol">⤳</span>
+            </div>
+            <h3 class="card-title">Data Analytics</h3>
+            <p class="body-sm ink-muted">
+              Bootcamp-level data science to production analytics — investment research,
+              document clustering, and Jupyter-based exploratory analysis across
+              financial and business datasets.
             </p>
           </article>
         </div>
@@ -121,50 +212,68 @@
     <!-- ─── Stack ──────────────────────────────────────────── -->
     <section class="section" id="stack" aria-labelledby="stack-heading">
       <div class="container">
-        <span class="eyebrow">Stack</span>
-        <h2 class="display-md section-heading" id="stack-heading">
-          The tools I reach for.
+        <span class="eyebrow" data-reveal>Stack</span>
+        <h2 class="display-md section-heading" id="stack-heading" data-reveal data-reveal-delay="1">
+          Extracted from 49 repositories.
         </h2>
         <div class="stack-table">
-          <div class="stack-row">
-            <span class="stack-label">Core</span>
+          <div class="stack-row" data-reveal data-reveal-delay="1">
+            <span class="stack-label">Languages</span>
             <div class="chip-group">
               <span class="chip">Python</span>
               <span class="chip">Rust</span>
               <span class="chip">C</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">HTML / CSS</span>
             </div>
           </div>
-          <div class="stack-row">
-            <span class="stack-label">Infrastructure</span>
-            <div class="chip-group">
-              <span class="chip">Docker</span>
-              <span class="chip">Linux</span>
-              <span class="chip">Git</span>
-              <span class="chip">SQLite</span>
-            </div>
-          </div>
-          <div class="stack-row">
-            <span class="stack-label">Data & ML</span>
+          <div class="stack-row" data-reveal data-reveal-delay="2">
+            <span class="stack-label">Data &amp; ML</span>
             <div class="chip-group">
               <span class="chip">pandas</span>
               <span class="chip">scikit-learn</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Matplotlib</span>
               <span class="chip">seaborn</span>
               <span class="chip">Jupyter</span>
             </div>
           </div>
-          <div class="stack-row">
+          <div class="stack-row" data-reveal data-reveal-delay="3">
+            <span class="stack-label">LLM / AI</span>
+            <div class="chip-group">
+              <span class="chip">RAG</span>
+              <span class="chip">LLM APIs</span>
+              <span class="chip">Agentic workflows</span>
+            </div>
+          </div>
+          <div class="stack-row" data-reveal data-reveal-delay="4">
+            <span class="stack-label">Infrastructure</span>
+            <div class="chip-group">
+              <span class="chip">Docker</span>
+              <span class="chip">Docker Compose</span>
+              <span class="chip">devcontainer</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+          <div class="stack-row" data-reveal data-reveal-delay="5">
             <span class="stack-label">Applications</span>
             <div class="chip-group">
               <span class="chip">Streamlit</span>
               <span class="chip">Selenium</span>
               <span class="chip">LINE Bot</span>
+              <span class="chip">LINE LIFF</span>
+              <span class="chip">Node.js</span>
             </div>
           </div>
-          <div class="stack-row">
+          <div class="stack-row" data-reveal data-reveal-delay="6">
             <span class="stack-label">Tooling</span>
             <div class="chip-group">
-              <span class="chip">Postman</span>
+              <span class="chip">uv</span>
+              <span class="chip">ruff</span>
               <span class="chip">VS Code</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Cargo</span>
             </div>
           </div>
         </div>
@@ -174,135 +283,63 @@
     <!-- ─── Work ───────────────────────────────────────────── -->
     <section class="section" id="work" aria-labelledby="work-heading">
       <div class="container">
-        <span class="eyebrow">Recent Work</span>
-        <h2 class="display-md section-heading" id="work-heading">
-          What I've been building.
-        </h2>
-        <div class="work-grid">
-
-          <a href="https://github.com/Dot8Pixels/investment-analyzer"
-             class="project-card"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="investment-analyzer — View on GitHub">
-            <div class="project-top">
-              <span class="project-tag">Finance</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title">investment-analyzer</h3>
-            <p class="body-sm ink-muted">
-              Investment analysis and portfolio evaluation tool. Domain logic in Python
-              for financial calculations and reporting.
-            </p>
-            <div class="project-chips">
-              <span class="chip chip-xs">Python</span>
-              <span class="chip chip-xs">pandas</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/Dot8Pixels/poc-anomaly-detection"
-             class="project-card"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="poc-anomaly-detection — View on GitHub">
-            <div class="project-top">
-              <span class="project-tag">ML</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title">poc-anomaly-detection</h3>
-            <p class="body-sm ink-muted">
-              Statistical and ML-backed anomaly detection system for financial
-              data streams. Proof of concept in scikit-learn.
-            </p>
-            <div class="project-chips">
-              <span class="chip chip-xs">Python</span>
-              <span class="chip chip-xs">scikit-learn</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/Dot8Pixels/poc-llm-wiki"
-             class="project-card"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="poc-llm-wiki — View on GitHub">
-            <div class="project-top">
-              <span class="project-tag">LLM</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title">poc-llm-wiki</h3>
-            <p class="body-sm ink-muted">
-              LLM-backed wiki and knowledge retrieval. Proof of concept for
-              production LLM applications with RAG patterns.
-            </p>
-            <div class="project-chips">
-              <span class="chip chip-xs">Python</span>
-              <span class="chip chip-xs">LLM</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/Dot8Pixels/sidecar"
-             class="project-card"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="sidecar — View on GitHub">
-            <div class="project-top">
-              <span class="project-tag">Architecture</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title">sidecar</h3>
-            <p class="body-sm ink-muted">
-              Sidecar pattern implementation for containerized services and
-              runtime auxiliary processes in production Docker environments.
-            </p>
-            <div class="project-chips">
-              <span class="chip chip-xs">Python</span>
-              <span class="chip chip-xs">Docker</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/Dot8Pixels/remote-debugging"
-             class="project-card"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="remote-debugging — View on GitHub">
-            <div class="project-top">
-              <span class="project-tag">DevTools</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3 class="card-title">remote-debugging</h3>
-            <p class="body-sm ink-muted">
-              Remote debugging setup and configuration patterns for
-              distributed Python services across container boundaries.
-            </p>
-            <div class="project-chips">
-              <span class="chip chip-xs">Python</span>
-              <span class="chip chip-xs">Docker</span>
-            </div>
-          </a>
-
-          <a href="https://github.com/Dot8Pixels"
-             class="project-card project-card--ghost"
-             target="_blank"
-             rel="noopener noreferrer"
-             aria-label="View all projects on GitHub">
+        <div class="work-header" data-reveal>
+          <div>
+            <span class="eyebrow">Latest Activity</span>
+            <h2 class="display-md section-heading" id="work-heading">
+              Top 5 recent repositories.
+            </h2>
+          </div>
+          <span class="live-badge" aria-label="Content auto-updates from GitHub">
+            <span class="live-dot" aria-hidden="true"></span>live from GitHub
+          </span>
+        </div>
+        <div class="work-grid" id="github-repos" aria-live="polite" aria-label="Recent GitHub repositories">
+          <!-- Skeleton placeholders -->
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skel-line skel-short"></div>
+            <div class="skel-line skel-long"></div>
+            <div class="skel-line skel-mid"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skel-line skel-short"></div>
+            <div class="skel-line skel-long"></div>
+            <div class="skel-line skel-mid"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skel-line skel-short"></div>
+            <div class="skel-line skel-long"></div>
+            <div class="skel-line skel-mid"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skel-line skel-short"></div>
+            <div class="skel-line skel-long"></div>
+            <div class="skel-line skel-mid"></div>
+          </div>
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skel-line skel-short"></div>
+            <div class="skel-line skel-long"></div>
+            <div class="skel-line skel-mid"></div>
+          </div>
+          <div class="project-card project-card--ghost skeleton-ghost" aria-hidden="true">
             <div class="ghost-inner">
               <span class="ghost-label">View all on GitHub</span>
               <span class="ghost-arrow" aria-hidden="true">→</span>
             </div>
-          </a>
-
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ─── Contact ────────────────────────────────────────── -->
     <section class="section section-contact" id="contact" aria-labelledby="contact-heading">
-      <div class="container container-narrow">
+      <div class="container container-narrow" data-reveal>
         <span class="eyebrow">Contact</span>
-        <h2 class="headline" id="contact-heading">Let's connect.</h2>
+        <h2 class="headline" id="contact-heading">Let's build something.</h2>
         <p class="body-lg ink-muted">
-          Open to conversations about financial systems, data engineering,
-          LLM applications, or Rust. Always up for interesting problems.
+          I'm open to conversations about financial systems, data pipelines,
+          LLM applications, or Rust. If you have an interesting problem that
+          needs correctness and speed, I'd like to hear about it.
         </p>
         <div class="contact-actions">
           <a href="mailto:napatsriz@gmail.com" class="btn btn-primary">
@@ -340,6 +377,165 @@
       </nav>
     </div>
   </footer>
+
+  <!-- ─── GitHub Repos Auto-loader ───────────────────────── -->
+  <script>
+    (function () {
+      'use strict';
+
+      const GITHUB_USER = 'Dot8Pixels';
+      // Skip the profile/meta repos — not real projects
+      const SKIP = new Set(['Dot8Pixels', 'snake-eating-github-contributions']);
+
+      // Infer a readable category tag from the repo name
+      function inferTag(name) {
+        if (/invest|finance|financi|investic/i.test(name)) return 'Finance';
+        if (/llm|ai|wiki|rag|gpt/i.test(name)) return 'LLM';
+        if (/rust/i.test(name)) return 'Rust';
+        if (/anomaly|detection|ml|data/i.test(name)) return 'ML';
+        if (/sidecar|container|docker|devcontainer/i.test(name)) return 'Architecture';
+        if (/debug|remote/i.test(name)) return 'DevTools';
+        if (/bot|line|liff|chat/i.test(name)) return 'Bot';
+        if (/advent|code|puzzle/i.test(name)) return 'Algorithms';
+        if (/pack|cargo|crate/i.test(name)) return 'Tooling';
+        if (/python|data.*science|bootcamp/i.test(name)) return 'Data';
+        return 'Project';
+      }
+
+      // Format pushed_at into "Apr 2026"
+      function formatDate(iso) {
+        return new Date(iso).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+      }
+
+      function renderCard(repo) {
+        const tag = inferTag(repo.name);
+        const lang = repo.language || '—';
+        const desc = (repo.description || 'No description provided.').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const date = formatDate(repo.pushed_at);
+        return `
+          <a href="${repo.html_url}"
+             class="project-card"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="${repo.name.replace(/"/g, '&quot;')} — View on GitHub">
+            <div class="project-top">
+              <span class="project-tag">${tag}</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="card-title">${repo.name}</h3>
+            <p class="body-sm ink-muted">${desc}</p>
+            <div class="project-meta">
+              <div class="project-chips">
+                <span class="chip chip-xs">${lang}</span>
+              </div>
+              <span class="repo-date">${date}</span>
+            </div>
+          </a>`;
+      }
+
+      function renderGhost() {
+        return `
+          <a href="https://github.com/Dot8Pixels"
+             class="project-card project-card--ghost"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="View all projects on GitHub">
+            <div class="ghost-inner">
+              <span class="ghost-label">View all on GitHub</span>
+              <span class="ghost-arrow" aria-hidden="true">→</span>
+            </div>
+          </a>`;
+      }
+
+      async function loadRepos() {
+        const container = document.getElementById('github-repos');
+        if (!container) return;
+
+        try {
+          const res = await fetch(
+            `https://api.github.com/users/${GITHUB_USER}/repos?sort=pushed&per_page=30&type=public`,
+            { headers: { Accept: 'application/vnd.github.v3+json' } }
+          );
+
+          if (!res.ok) throw new Error(`GitHub API ${res.status}`);
+
+          const repos = await res.json();
+          const top5 = repos
+            .filter(r => !r.fork && !SKIP.has(r.name))
+            .slice(0, 5);
+
+          if (!top5.length) throw new Error('No repos returned');
+
+          container.innerHTML = top5.map(renderCard).join('') + renderGhost();
+        } catch {
+          // Silent fallback: keep static skeleton visible with a soft message
+          container.innerHTML = `
+            <p class="body-sm ink-muted" style="grid-column:1/-1;padding:var(--space-lg) 0">
+              Could not load live repositories — visit
+              <a href="https://github.com/Dot8Pixels" target="_blank" rel="noopener noreferrer"
+                 style="color:var(--color-primary)">github.com/Dot8Pixels</a> directly.
+            </p>`;
+        }
+      }
+
+      loadRepos();
+
+      // ─── Scroll reveal ─────────────────────────────────────
+      const revealObs = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            revealObs.unobserve(e.target);
+          }
+        }),
+        { threshold: 0.1 }
+      );
+      document.querySelectorAll('[data-reveal]').forEach(el => revealObs.observe(el));
+
+      // ─── Nav: active section highlight + scrolled blur ─────
+      const topNav   = document.querySelector('.top-nav');
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+
+      const sectionSpy = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) {
+            navLinks.forEach(a =>
+              a.classList.toggle('is-active', a.getAttribute('href') === '#' + e.target.id)
+            );
+          }
+        }),
+        { rootMargin: '-30% 0px -60% 0px' }
+      );
+      sections.forEach(s => sectionSpy.observe(s));
+
+      window.addEventListener('scroll', () => {
+        topNav.classList.toggle('is-scrolled', window.scrollY > 40);
+      }, { passive: true });
+
+      // ─── Stat count-up ─────────────────────────────────────
+      function countUp(el) {
+        const target   = parseInt(el.dataset.count, 10);
+        const suffix   = el.dataset.countSuffix || '';
+        const duration = 900;
+        const t0       = performance.now();
+        function frame(now) {
+          const p = Math.min((now - t0) / duration, 1);
+          el.textContent = Math.floor((1 - Math.pow(1 - p, 3)) * target) + suffix;
+          if (p < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+      }
+      const countObs = new IntersectionObserver(
+        entries => entries.forEach(e => {
+          if (e.isIntersecting) { countUp(e.target); countObs.unobserve(e.target); }
+        }),
+        { threshold: 0.5 }
+      );
+      document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+    })();
+  </script>
 
 </body>
 </html>

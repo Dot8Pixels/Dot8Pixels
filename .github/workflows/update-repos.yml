@@ -1,0 +1,94 @@
+name: Update Latest Repos
+
+on:
+  schedule:
+    # Runs every day at 03:00 UTC
+    - cron: "0 3 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch top 5 repos and update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: Dot8Pixels
+          # Repos to skip (profile meta / snake animation)
+          SKIP_REPOS: Dot8Pixels,snake-eating-github-contributions
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, re, urllib.request, urllib.error
+          from datetime import datetime, timezone
+
+          user      = os.environ["GH_USER"]
+          token     = os.environ["GITHUB_TOKEN"]
+          skip_set  = set(os.environ["SKIP_REPOS"].split(","))
+
+          url = f"https://api.github.com/users/{user}/repos?sort=pushed&per_page=30&type=public"
+          req = urllib.request.Request(url, headers={
+              "Accept": "application/vnd.github.v3+json",
+              "Authorization": f"Bearer {token}",
+              "User-Agent": "update-repos-action",
+          })
+
+          with urllib.request.urlopen(req) as resp:
+              repos = json.loads(resp.read())
+
+          top5 = [r for r in repos if not r["fork"] and r["name"] not in skip_set][:5]
+
+          def fmt_date(iso):
+              dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+              return dt.strftime("%b %Y")
+
+          lines = []
+          lines.append("| Repository | Description | Language | Updated |")
+          lines.append("|---|---|---|---|")
+          for r in top5:
+              name  = r["name"]
+              url_  = r["html_url"]
+              desc  = (r["description"] or "—").replace("|", "\\|")
+              lang  = r["language"] or "—"
+              date  = fmt_date(r["pushed_at"])
+              lines.append(f"| [{name}]({url_}) | {desc} | {lang} | {date} |")
+
+          table = "\n".join(lines)
+
+          readme_path = "README.md"
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          new_block = f"<!-- REPOS:START -->\n{table}\n<!-- REPOS:END -->"
+          updated   = re.sub(
+              r"<!-- REPOS:START -->.*?<!-- REPOS:END -->",
+              new_block,
+              content,
+              flags=re.DOTALL,
+          )
+
+          if updated == content:
+              print("No change detected.")
+          else:
+              with open(readme_path, "w", encoding="utf-8") as f:
+                  f.write(updated)
+              print("README.md updated.")
+          PYEOF
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet && echo "Nothing to commit." || (
+            git add README.md
+            git commit -m "chore: auto-update top 5 repos [skip ci]"
+            git push
+          )
