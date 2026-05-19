@@ -167,11 +167,11 @@ $$\text{Sharpe Ratio} = \frac{\mu_p - r_f}{\sigma_p}$$
 <!-- REPOS:START -->
 | Repository | Description | Language | Updated |
 |---|---|---|---|
+| [my-doppelganger](https://github.com/Dot8Pixels/my-doppelganger) | Doppelganger Agent | — | May 2026 |
 | [second-brain](https://github.com/Dot8Pixels/second-brain) | A personal knowledge base maintained by an LLM agent. The LLM writes and maintains all wiki content; you curate sources and ask questions. | — | May 2026 |
 | [poc-llm-wiki](https://github.com/Dot8Pixels/poc-llm-wiki) | POC for Karpathy's LLM Wiki | — | May 2026 |
 | [sidecar](https://github.com/Dot8Pixels/sidecar) | poc for sidecar container | Python | Apr 2026 |
 | [poc-anomaly-detection](https://github.com/Dot8Pixels/poc-anomaly-detection) | — | HTML | Apr 2026 |
-| [remote-debugging](https://github.com/Dot8Pixels/remote-debugging) | Remote Debugging | Python | Dec 2025 |
 <!-- REPOS:END -->
 
 <div align="right"><a href="https://github.com/Dot8Pixels?tab=repositories">View all 49+ repositories →</a></div>
