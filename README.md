@@ -167,11 +167,11 @@ $$\text{Sharpe Ratio} = \frac{\mu_p - r_f}{\sigma_p}$$
 <!-- REPOS:START -->
 | Repository | Description | Language | Updated |
 |---|---|---|---|
+| [persona-blog](https://github.com/Dot8Pixels/persona-blog) | Personal portfolio website and blog | Astro | May 2026 |
 | [html-presenter](https://github.com/Dot8Pixels/html-presenter) | This workspace is a local installation of **[frontend-slides](https://github.com/zarazhangrui/frontend-slides)** v2.1.0 by @zarazhangrui — a coding-agent skill for creating stunning, zero-dependency HTML presentations. | HTML | May 2026 |
 | [my-doppelganger](https://github.com/Dot8Pixels/my-doppelganger) | Doppelganger Agent | Python | May 2026 |
 | [second-brain](https://github.com/Dot8Pixels/second-brain) | A personal knowledge base maintained by an LLM agent. The LLM writes and maintains all wiki content; you curate sources and ask questions. | — | May 2026 |
 | [poc-llm-wiki](https://github.com/Dot8Pixels/poc-llm-wiki) | POC for Karpathy's LLM Wiki | — | May 2026 |
-| [sidecar](https://github.com/Dot8Pixels/sidecar) | poc for sidecar container | Python | Apr 2026 |
 <!-- REPOS:END -->
 
 <div align="right"><a href="https://github.com/Dot8Pixels?tab=repositories">View all 49+ repositories →</a></div>
